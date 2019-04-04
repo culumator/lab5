@@ -40,6 +40,7 @@
 #include "xparameters.h"
 #include "xio.h"
 #include "vga_periph_mem.h"
+#include <time.h>
 
 
 void print(char *str);
@@ -47,7 +48,11 @@ void print(char *str);
 int main()
 {
     init_platform();
-    unsigned char string_s[] = "LPRS 2\n";
+    unsigned char string_s[] = "VODENICA IMA 7 KAMENOVA, SVAKI KAMEN 4 COVEKA\n";
+    unsigned char ch=65;
+    unsigned int data=0x55AB87C;
+    unsigned int data1=0xA123540;
+    unsigned int data2=0x5;
 
     VGA_PERIPH_MEM_mWriteMemory(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR + 0x00, 0x0);// direct mode   0
     VGA_PERIPH_MEM_mWriteMemory(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR + 0x04, 0x3);// display_mode  1
@@ -63,7 +68,12 @@ int main()
     clear_graphics_screen(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
     draw_square(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
     set_cursor(350);
-    print_string(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR, string_s, 6);
+    print_string(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR, string_s, 45);
+
+    print_char(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR, ch);
+    set_foreground_color(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR,data);
+    set_background_color(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR,data1);
+    set_font_size(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR,data2);
 
 
     return 0;

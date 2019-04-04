@@ -137,3 +137,35 @@
 09:39:04.953 INFO  - Refreshed build settings on project hello_world 
 10:33:44.745 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
 10:36:10.473 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:25:07.891 INFO  - Processing command line option -hwspec C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Export\hw\system.xml. 
+09:25:10.237 INFO  - The hardware specification for project 'basic_system_hw_platform' is different from C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Export\hw\system.xml. 
+09:25:10.282 INFO  - Copied contents of C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Export\hw\system.xml into \basic_system_hw_platform\system.xml. 
+09:25:10.287 INFO  - Copied contents of C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Export\hw\system.bit into \basic_system_hw_platform\system.bit. 
+09:25:10.289 INFO  - Copied contents of C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Export\hw\system_bd.bmm into \basic_system_hw_platform\system_bd.bmm. 
+09:25:10.692 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+09:25:13.110 INFO  - Restoring local repository preferences: 
+		 D:\work\lprs2\2013_2014\Resene_vezbe\lab56\basic_system 
+09:25:14.552 INFO  - Updating hardware inferred compiler options for hello_world. 
+09:25:14.571 INFO  - Clearing existing target manager status. 
+09:25:32.556 ERROR - Unable to read in MSS file C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+09:25:32.568 ERROR - Unable to read in MSS file C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+09:25:32.605 WARN  - Unable to determine location of documentation for OS . 
+09:25:32.608 ERROR - Unable to read in MSS file C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+09:25:32.615 ERROR - Unable to read in MSS file C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+09:26:18.800 ERROR - Unable to read in MSS file C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+09:26:31.494 ERROR - Unable to read in MSS file C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+09:26:38.719 ERROR - Unable to read in MSS file C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+09:26:38.956 ERROR - Unable to read in MSS file C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+09:26:46.521 ERROR - Unable to read in MSS file C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+09:26:53.464 ERROR - Unable to read in MSS file C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+09:26:56.555 ERROR - Unable to read in MSS file C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+09:27:06.205 ERROR - Unable to read in MSS file C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+09:27:22.855 INFO  - Settings changed on project hello_world_bsp. Triggering a rebuild... 
+09:28:32.697 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+09:39:21.180 INFO  - FPGA configured successfully with bitstream "C:/Users/student/Desktop/veyba5/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+09:48:32.573 INFO  - FPGA configured successfully with bitstream "C:/Users/student/Desktop/veyba5/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
