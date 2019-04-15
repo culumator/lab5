@@ -74,6 +74,10 @@ int main()
     set_foreground_color(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR,data);
     set_background_color(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR,data1);
     set_font_size(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR,data2);
+    trci_kocka(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
+
+
+
 
 
     return 0;

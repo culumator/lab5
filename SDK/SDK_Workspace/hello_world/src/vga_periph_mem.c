@@ -42,23 +42,26 @@ void set_font_size(Xuint32 BaseAddress, unsigned int data){
 	VGA_PERIPH_MEM_mWriteMemory(BaseAddress + 0x0000000C, data);
 }
 
-void trci_kocka(Xuint32 BaseAddress, unsigned int data){
+void trci_kocka(Xuint32 BaseAddress){
+	int i, j, k;
+	int br=0;
 
-		int i, j, k;
+	while(1){
+	do{
+		draw_square(BaseAddress+br);
+		for(i=0;i<200000;i++){}
+		clear_graphics_screen(BaseAddress);     ////////
+		br++;
+	} while(br<=34);
 
+	do{
+			draw_square(BaseAddress+br);
+			for(i=0;i<200000;i++){}
+			clear_graphics_screen(BaseAddress);     ////////
+			br--;
+		} while(br>=-34);
 
-
-			for (j = 0; j < 480; j++){
-				for (k = 0; k<(640/32); k++){
-					i = j*(640/32) + k;
-					if ((j > 200) && (j < 280) && (k > 8) && (k < 12)) {
-						VGA_PERIPH_MEM_mWriteMemory(BaseAddress + GRAPHICS_MEM_OFF + i*4, 0xFFFFFFFF);
-					}
-					else{
-						VGA_PERIPH_MEM_mWriteMemory(BaseAddress + GRAPHICS_MEM_OFF + i*4, 0x0);
-					}
-				}
-			}
+	}
 
 }
 

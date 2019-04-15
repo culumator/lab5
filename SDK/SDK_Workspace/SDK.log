@@ -169,3 +169,25 @@
  
 09:39:21.180 INFO  - FPGA configured successfully with bitstream "C:/Users/student/Desktop/veyba5/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
 09:48:32.573 INFO  - FPGA configured successfully with bitstream "C:/Users/student/Desktop/veyba5/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+09:36:01.598 INFO  - Processing command line option -hwspec C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Export\hw\system.xml. 
+09:36:02.424 INFO  - The hardware specification for project 'basic_system_hw_platform' is different from C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Export\hw\system.xml. 
+09:36:02.437 INFO  - Copied contents of C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Export\hw\system.xml into \basic_system_hw_platform\system.xml. 
+09:36:02.442 INFO  - Copied contents of C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Export\hw\system.bit into \basic_system_hw_platform\system.bit. 
+09:36:02.444 INFO  - Copied contents of C:\Users\student\Desktop\veyba5\lab5\SDK\SDK_Export\hw\system_bd.bmm into \basic_system_hw_platform\system_bd.bmm. 
+09:36:02.868 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+09:36:03.942 INFO  - Restoring local repository preferences: 
+		 D:\work\lprs2\2013_2014\Resene_vezbe\lab56\basic_system 
+09:36:05.073 INFO  - Updating hardware inferred compiler options for hello_world. 
+09:36:05.136 INFO  - Clearing existing target manager status. 
+09:36:47.216 INFO  - FPGA configured successfully with bitstream "C:/Users/student/Desktop/veyba5/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+09:47:10.855 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:47:17.158 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:47:33.632 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:47:58.561 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:52:09.790 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:56:38.673 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:57:16.770 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:57:32.292 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:57:47.582 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:57:59.652 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:58:13.337 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
