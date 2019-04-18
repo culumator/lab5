@@ -3698,3 +3698,13 @@ Xilinx Software Development Kit
 Xilinx EDK 14.6 Build EDK_P.68d
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 Done!
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Overriding Xilinx file <TextEditor.cfg> with local file <C:/Xilinx/14.6/ISE_DS/EDK/data/TextEditor.cfg>
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\student\Desktop\v5\lab5\etc\system.filters
+Done writing Tab View settings to:
+	C:\Users\student\Desktop\v5\lab5\etc\system.gui

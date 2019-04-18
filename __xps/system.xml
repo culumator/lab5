@@ -1,7 +1,6 @@
+<EDKSYSTEM EDKVERSION="14.6" EDWVERSION="1.2" TIMESTAMP="Thu Apr 18 09:22:08 2019">
 
-<EDKSYSTEM EDKVERSION="14.6" EDWVERSION="1.2" TIMESTAMP="Mon Apr 15 09:30:36 2019">
-
-  <SYSTEMINFO ARCH="spartan6" DEVICE="xc6slx45" PACKAGE="fgg676" PART="xc6slx45fgg676-2" SOURCE="C:/Users/student/Desktop/veyba5/lab5/system.xmp" SPEEDGRADE="-2"/>
+  <SYSTEMINFO ARCH="spartan6" DEVICE="xc6slx45" PACKAGE="fgg676" PART="xc6slx45fgg676-2" SOURCE="C:/Users/student/Desktop/v5/lab5/system.xmp" SPEEDGRADE="-2"/>
 
   <EXTERNALPORTS>
     <PORT DIR="O" MHS_INDEX="0" NAME="RS232_Uart_1_sout" SIGNAME="RS232_Uart_1_sout">

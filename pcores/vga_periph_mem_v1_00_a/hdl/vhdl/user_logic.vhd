@@ -192,6 +192,15 @@ architecture IMP of user_logic is
   constant REG_ADDR_05       : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0) := conv_std_logic_vector( 5, GRAPH_MEM_ADDR_WIDTH);
   constant REG_ADDR_06       : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0) := conv_std_logic_vector( 6, GRAPH_MEM_ADDR_WIDTH);
   
+  
+  -----------------------------------------OVO SMO MI DODALI--------------------------------------------------
+  constant REG_ADDR_07       : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0) := conv_std_logic_vector( 7, GRAPH_MEM_ADDR_WIDTH);
+  constant REG_ADDR_08       : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0) := conv_std_logic_vector( 8, GRAPH_MEM_ADDR_WIDTH);
+  constant REG_ADDR_09       : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0) := conv_std_logic_vector( 9, GRAPH_MEM_ADDR_WIDTH);
+  constant REG_ADDR_10       : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0) := conv_std_logic_vector( 10, GRAPH_MEM_ADDR_WIDTH);
+  -----------------------------------------OVO SMO MI DODALI--------------------------------------------------
+  
+  
   constant update_period     : std_logic_vector(31 downto 0) := conv_std_logic_vector(1, 32);
   
   --addr_size = 15+6 = 21;+2 = 23
@@ -312,6 +321,15 @@ architecture IMP of user_logic is
   signal background_color    : std_logic_vector(23 downto 0);
   signal frame_color         : std_logic_vector(23 downto 0);
   
+  
+  -----------------------------------------OVO SMO MI DODALI--------------------------------------------------
+  signal v_sync_counter_tc   : std_logic_vector(31 downto 0);
+  signal en         : std_logic;
+  -----------------------------------------OVO SMO MI DODALI--------------------------------------------------
+  
+  signal s_tc: std_logic;
+  signal IRQ: std_logic;
+  
   signal vga_vsync_s         : std_logic;
   
   signal pix_clock_s         : std_logic;
@@ -359,12 +377,26 @@ begin
             when REG_ADDR_04 => foreground_color <= Bus2IP_Data(23 downto 0);
             when REG_ADDR_05 => background_color <= Bus2IP_Data(23 downto 0);
             when REG_ADDR_06 => frame_color      <= Bus2IP_Data(23 downto 0);
+			
+  -----------------------------------------OVO SMO MI DODALI--------------------------------------------------
+            when REG_ADDR_07 => v_sync_counter_tc 	<= Bus2IP_Data(31 downto 0);
+            when REG_ADDR_08 => en      			<= Bus2IP_Data(0);
+  -----------------------------------------OVO SMO MI DODALI--------------------------------------------------
             when others => null;
           end case;
+		  
+
         end if;
     end if;
   end process;
-    
+
+  
+	IRQ <= en and s_tc;
+	
+	s_tc <= '1' when v_sync_counter_tc = dir_pixel_row else
+			'0';
+
+	
 --  direct_mode      <= '0';
 --  display_mode     <= "01";
 --  font_size        <= x"1";
