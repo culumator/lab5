@@ -128,6 +128,10 @@ entity user_logic is
     red_o          : out std_logic_vector(7 downto 0);
     green_o        : out std_logic_vector(7 downto 0);
     blue_o         : out std_logic_vector(7 downto 0);
+	
+	
+    IRQ_o        : out std_logic;
+	
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -392,6 +396,8 @@ begin
 
   
 	IRQ <= en and s_tc;
+	
+	IRQ_o <= IRQ;
 	
 	s_tc <= '1' when v_sync_counter_tc = dir_pixel_row else
 			'0';

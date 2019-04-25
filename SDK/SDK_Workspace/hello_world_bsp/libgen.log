@@ -10,14 +10,6 @@ libgen.log system.mss
 Staging source files.
 Running DRCs.
 Running generate.
-Running post_generate.
-Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
-"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
--mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
--ffunction-sections -fdata-sections"'.
-
-Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
-"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
--mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
--ffunction-sections -fdata-sections"'.
-Running execs_generate.
+ERROR:EDK - intc () - Internal error: Num intr inputs 1 not the same as length
+   of xget_interrupt_sources 0 
+ERROR:EDK:3416 - Error(s) while running TCL procedure generate().
